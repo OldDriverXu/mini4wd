@@ -1,0 +1,52 @@
+<view>
+  <view class="page-banner">
+    <swiper class="banner" wx:if="{{bannerList.length > 0}}" circular="true" autoplay="true" interval="3000">
+      <block wx:for="{{bannerList}}" wx:key="index">
+        <swiper-item>
+          <image class="banner-ads" src="{{item.img}}" mode="aspectFill" bindtap="onClickBanner" data-item="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view wx:else >
+      <image class="banner-default" src="{{defaultBanner}}" mode="aspectFill"></image>
+    </view>
+  </view>
+
+  <view class="page-content">
+    <van-grid>
+      <van-grid-item icon="gem-o" text="规则介绍" />
+      <van-grid-item icon="fire-o" text="热门活动" />
+      <van-grid-item icon="cart-o" text="热销商品" />
+      <van-grid-item icon="smile-o" text="酷炫改装" />
+    </van-grid>
+
+    <view class="news">
+      <van-row gutter="10">
+        <van-col span="12">
+          <view class="news-item">这里是文字，balabala，很多很多文字，balabala</view>
+        </van-col>
+        <van-col span="12">
+          <view class="news-item">这里是文字，balabala，很多很多文字，balabala</view>
+        </van-col>
+      </van-row>
+
+      <van-row gutter="10">
+        <van-col span="12">
+          <view class="news-item">这里是文字，balabala，很多很多文字，balabala</view>
+        </van-col>
+        <van-col span="12">
+          <view class="news-item">这里是文字，balabala，很多很多文字，balabala</view>
+        </van-col>
+      </van-row>
+
+      <van-row gutter="10">
+        <van-col span="12">
+          <view class="news-item">这里是文字，balabala，很多很多文字，balabala</view>
+        </van-col>
+        <van-col span="12">
+          <view class="news-item">这里是文字，balabala，很多很多文字，balabala</view>
+        </van-col>
+      </van-row>
+    </view>
+  </view>
+</view>
