@@ -1,1 +1,19 @@
 /* pages/friend/index.wxss */
+
+.page-banner {
+  width: 100%;
+  height: 500rpx;
+}
+
+.page-content {
+  padding: 10rpx 20rpx;
+}
+
+.page-image {
+  width: 100%;
+}
+
+.page-placeholder {
+  width: 100%;
+  height: 300rpx;
+}

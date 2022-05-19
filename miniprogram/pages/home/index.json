@@ -1,9 +1,8 @@
 {
-  "navigationBarTitleText": "首页",
+  "navigationBarTitleText": "街头迷你四驱车友",
   "usingComponents": {
     "van-grid": "@vant/weapp/grid/index",
     "van-grid-item": "@vant/weapp/grid-item/index",
-    "van-row": "@vant/weapp/row/index",
-    "van-col": "@vant/weapp/col/index"
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
   }
 }

@@ -1,0 +1,13 @@
+<view>
+  <image class="act-banner" src="../../images/act-banner.jpg" mode="scaleToFill" />
+
+  <view class="act-list" wx:if="{{actList.length > 0}}">
+    <block wx:for="{{actList}}"  wx:key="index">
+      <view class="act-item" bindtap="onClickAct" data-item="{{item}}">
+        <image class="act-img" src="{{item.img}}" mode="scaleToFill" />
+        <view class="act-title">{{item.title}}</view>
+        <view class="act-desc">{{item.desc}}</view>
+      </view>
+    </block>
+  </view>
+</view>

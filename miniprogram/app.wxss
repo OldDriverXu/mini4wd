@@ -154,3 +154,5 @@ page {
   line-height: 36rpx;
   word-break: break-all;
 }
+
+@import './wxParse/wxParse.wxss';

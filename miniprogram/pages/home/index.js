@@ -1,6 +1,6 @@
 Page({
   data: {
-    defaultBanner: '../../images/home/defaultBanner.png',
+    defaultBanner: '../../images/home-banner.png',
     bannerList: [],
   },
 
@@ -33,6 +33,14 @@ Page({
     this.getTabBar().init()
   },
 
+  onShareAppMessage: function () {
+    return {
+      title: '街头迷你四驱车友',
+      imageUrl: '../../images/streetmini4wd-china.jpg',
+      path: '/pages/home/index'
+    }
+  },
+
   onClickBanner: function(event) {
     const {url} = event.currentTarget.dataset.item
 
@@ -43,4 +51,36 @@ Page({
     //   src: url
     // })
   },
+
+  onClickBtn: function(e) {
+    const name = e.currentTarget.dataset.name
+    console.log(name)
+    switch (name) {
+      case 'intro':
+        wx.navigateTo({
+          url: '/pages/article/index?aid=1'
+        })
+        break
+      case 'rule':
+        wx.navigateTo({
+          url: '/pages/article/index?aid=2'
+        })
+        break;
+      case 'act':
+        wx.navigateTo({
+          url: '/pages/act/index'
+        })
+        break
+      case 'sale':
+        wx.navigateTo({
+          url: '/pages/sale/list'
+        })
+        break
+      case 'model':
+        wx.navigateTo({
+          url: '/pages/model/list'
+        })
+        break
+    }
+  }
 })
