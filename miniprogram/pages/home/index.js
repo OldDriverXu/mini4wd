@@ -1,6 +1,6 @@
 Page({
   data: {
-    defaultBanner: '../../images/home-banner.png',
+    defaultBanner: '../../images/banner/home-banner.png',
     bannerList: [],
   },
 

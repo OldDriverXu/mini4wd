@@ -1,5 +1,5 @@
 <view>
-  <image class="act-banner" src="../../images/act-banner.jpg" mode="scaleToFill" />
+  <image class="act-banner" src="../../images/banner/act-banner.jpg" mode="scaleToFill" />
 
   <view class="act-list" wx:if="{{actList.length > 0}}">
     <block wx:for="{{actList}}"  wx:key="index">

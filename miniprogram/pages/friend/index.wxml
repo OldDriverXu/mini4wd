@@ -1,6 +1,6 @@
 <view class="page">
 
-  <image class="page-banner" src="cloud://mini4wd-7gcw641157df5abb.6d69-mini4wd-7gcw641157df5abb-1311759901/banner/friend-banner.jpg" mode="cover"/>
+  <image class="page-banner" src="../../images/banner/friend-banner.jpg" mode="cover"/>
 
   <view class="page-content">
     欢迎加入街头迷你四驱车的大家庭，更多精彩信息请关注公共号：【街头迷你四驱车】
