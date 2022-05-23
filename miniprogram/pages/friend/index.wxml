@@ -14,7 +14,7 @@
     KEEP ON RUNNING!!!
   </view>
 
-  <image class="page-image" src="../../images/community.png" mode="aspectFit" />
+  <image class="page-image" src="https://user-images.githubusercontent.com/3946415/169771653-3bef9533-4768-4309-a6b6-2f84a2e6177f.png" mode="aspectFit" />
 
   <view class="page-placeholder" />
 </view>
