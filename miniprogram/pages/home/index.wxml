@@ -23,7 +23,7 @@
 
     <view class="news">
       <view class="news-title">资讯</view>
-      <van-notice-bar custom-class="news-item" scrollable text="【ZAURUS CUP】恐龙四驱争霸赛2022即将开幕！" />
+      <van-notice-bar custom-class="news-item" scrollable left-icon="volume-o" text="{{ news.text }}" bind:click="onClickNews" data-news="{{ news }}"/>
     </view>
   </view>
 </view>

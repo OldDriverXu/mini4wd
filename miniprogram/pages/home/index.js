@@ -2,6 +2,7 @@ Page({
   data: {
     defaultBanner: '../../images/banner/home-banner.png',
     bannerList: [],
+    news: null,
   },
 
   onLoad: function() {
@@ -9,9 +10,9 @@ Page({
     this.getTabBar().setData({
       active : 0
     })
-    // 加载banner广告位数据
+
     const db = wx.cloud.database()
-   
+    // 加载banner广告位数据
     db.collection('banner').where({
       position: '1'
     })
@@ -21,11 +22,25 @@ Page({
     })
     .get()
     .then(res => {
-      console.log(res.data[0].list)
       this.setData({
         bannerList: res.data[0].list
       })
     })
+
+    // 加载咨询位数据
+    db.collection('banner').where({
+      position: 'news'
+    }).get()
+    .then(res => {
+      this.setData({
+        news: {
+          text: res.data[0].list[0].title,
+          aid: res.data[0].list[0].aid,
+        }
+      })
+    })
+
+
   },
 
   onShow: function () {
@@ -82,5 +97,12 @@ Page({
         })
         break
     }
+  },
+
+  onClickNews: function(e) {
+    const news = e.currentTarget.dataset.news
+    wx.navigateTo({
+      url: '/pages/article/index?aid=' + news.aid
+    })
   }
 })
