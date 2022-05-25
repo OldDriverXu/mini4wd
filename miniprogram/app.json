@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/product/list",
     "pages/home/index",
+    "pages/product/list",
     "pages/product/detail",
     "pages/friend/index",
     "pages/setting/index",
