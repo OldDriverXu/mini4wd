@@ -51,7 +51,7 @@ Page({
   onShareAppMessage: function () {
     return {
       title: '街头迷你四驱车友',
-      imageUrl: '../../images/streetmini4wd-china.jpg',
+      imageUrl: '../../images/share-img.jpg',
       path: '/pages/home/index'
     }
   },
