@@ -1,0 +1,8 @@
+<view class="page">
+  <image class="about-banner" src="../../images/banner/friend-banner.jpg" mode="scaleToFill" />
+  <view class="about-content wrap">
+    <view>街头迷你四驱车友，完全由国内车友们自己创作，致力于打造一个大型的街头迷你四驱车友交流平台。</view>
+    <view>欢迎广大车友投稿，改装、晒车、活动等，内容不限。</view>
+    <view>投稿邮箱：streetmini4wd@163.com</view>
+  </view>
+</view>

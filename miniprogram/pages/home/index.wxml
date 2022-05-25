@@ -17,8 +17,10 @@
       <van-grid-item icon="comment-o" text="发展历史" bindtap="onClickBtn" data-name="intro" />
       <van-grid-item icon="gem-o" text="赛事规则" bindtap="onClickBtn" data-name="rule" />
       <van-grid-item icon="fire-o" text="热门活动" bindtap="onClickBtn" data-name="act" />
+      <van-grid-item icon="video-o" text="UP接龙" bindtap="onClickBtn" data-name="jielong" />
       <!-- <van-grid-item icon="cart-o" text="热销商品" bindtap="onClickBtn" data-name="sale" />
       <van-grid-item icon="smile-o" text="酷炫改装" bindtap="onClickBtn" data-name="model" /> -->
+
     </van-grid>
 
     <view class="news">

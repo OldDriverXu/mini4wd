@@ -8,9 +8,7 @@ Page({
 
   onLoad: function(options) {
     const aid = options.aid
-    const that = this;
-
-    console.log(aid)
+    const that = this
 
     // 加载文章数据
     const db = wx.cloud.database()
@@ -20,8 +18,8 @@ Page({
     })
     .get()
     .then(res => {
-      let title = res.data[0].title;
-      let content = res.data[0].content;
+      let title = res.data[0].title
+      let content = res.data[0].content
 
       wx.setNavigationBarTitle({
         title: title

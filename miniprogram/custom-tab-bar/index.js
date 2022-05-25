@@ -14,10 +14,10 @@ Component({
         pagePath: "/pages/friend/index",
         text: "车友"
       },
-      // {
-      //   pagePath: "/pages/setting/index",
-      //   text: "设置"
-      // }
+      {
+        pagePath: "/pages/setting/index",
+        text: "我的"
+      }
     ]
   },
 

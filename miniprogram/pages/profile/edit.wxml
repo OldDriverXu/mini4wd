@@ -1,0 +1,85 @@
+<view class="page">
+  <van-cell-group custom-class="profile-block">
+    <van-field 
+      model:value="{{ nickName }}"
+      clearable
+      label="昵称"
+      placeholder="请输入昵称"
+      size="large"
+    />
+    <van-field
+      value="{{ openid }}"
+      readonly
+      label="uid"
+      size="large"
+    />
+    <!-- <van-field
+      model:value="{{ province }}"
+      clearable
+      label="地区"
+      placeholder="请输入省/直辖市/地区"
+      size="large"
+    />
+    <van-field
+      model:value="{{ city }}"
+      clearable
+      label="市"
+      placeholder="请输入城市"
+      size="large"
+    /> -->
+    <van-cell
+      title="地区"
+      value="{{ province + city }}"
+      is-link
+      bind:click="onShowPopup"
+      size="large"
+      title-class="cell-title"
+      value-class="cell-value"
+    />
+  </van-cell-group>
+  <van-popup
+    show="{{ showPopup }}"
+    position="bottom"
+    custom-style="height: 40%;"
+    bind:close="onClosePopup"
+  >
+    <van-area
+      area-list="{{ areaList }}"
+      columns-num="{{ 2 }}"
+      value="{{ areaValue }}"
+      bind:confirm="onConfirm"
+      bind:cancel="onCancel"
+    />
+  </van-popup>
+
+
+  <van-cell-group custom-class="profile-block">
+    <van-field 
+      model:value="{{ carName }}"
+      clearable
+      label="车名"
+      placeholder="请输入爱车车名"
+      size="large"
+    />
+
+    <van-field 
+      model:value="{{ carChassis }}"
+      clearable
+      label="底盘"
+      placeholder="请输入底盘型号"
+      size="large"
+    />
+
+    <van-field 
+      model:value="{{ teamName }}"
+      clearable
+      label="车队"
+      placeholder="请输入车队"
+      size="large"
+    />
+  </van-cell-group>
+
+  <view class="wrap profile-block">
+    <van-button type="info" block bind:click="onClick">保存</van-button>
+  </view>
+</view>

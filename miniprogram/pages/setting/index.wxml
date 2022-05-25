@@ -1,3 +1,33 @@
-<view>
-  开发中
+<view class="page page-full">
+  <block wx:if="{{!hasUserInfo}}">
+    <view class="login">
+      <image class="login-icon" src="../../images/streetmini4wd-china.jpg" mode="aspectFit" />
+      <view class="login-text">街头迷你四驱车</view>
+      <view class="login-text">期待你的加入</view>
+      <view class="login-btn">
+        <van-button type="primary" block bind:click="getUserProfile">微信登录</van-button>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="userinfo">
+      <view class="userinfo-name">
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <text class="userinfo-id">uid: {{openid}}</text>
+      </view>
+      <image class="userinfo-avatar" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    </view>
+    <van-cell-group>
+      <van-cell icon="label-o" title="信息" size="large" is-link link-type="navigateTo" url="/pages/profile/index" />
+      <van-cell icon="medal-o" title="会员" size="large" is-link link-type="navigateTo" url="/pages/about/index" />
+      <van-cell icon="setting-o" title="关于" size="large" is-link link-type="navigateTo" url="/pages/setting/about" />
+    </van-cell-group>
+  </block>
+
+  <view class="wrap">
+    <view class="join">
+      <view>欢迎广大车友投稿，改装、晒车、活动等</view>
+      <view>投稿邮箱：streetmini4wd@163.com</view>
+    </view>
+  </view>
 </view>

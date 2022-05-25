@@ -1,0 +1,14 @@
+.profile-block {
+  margin-top: 40rpx;
+}
+.cell-title {
+  display: flex;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.cell-value {
+  display: flex;
+  flex-grow: 2;
+  text-align: left;
+}

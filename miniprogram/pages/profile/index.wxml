@@ -1,0 +1,17 @@
+<view class="page">
+  <van-cell-group custom-class="profile-block">
+    <van-cell title="昵称" value="{{ nickName }}" size="large" title-class="cell-title" value-class="cell-value" />
+    <van-cell title="uid" title-class="openid-title" value="{{ openid }}" size="large" title-class="cell-title" value-class="cell-value" />
+    <van-cell title="地区" value="{{ (province ? province : '-') + (city ? city : '-' ) }}" size="large" title-class="cell-title" value-class="cell-value"/>
+  </van-cell-group>
+
+  <van-cell-group custom-class="profile-block">
+    <van-cell title="车名" value="{{ carName }}" size="large" title-class="cell-title" value-class="cell-value" />
+    <van-cell title="底盘" value="{{ carChassis }}" size="large" title-class="cell-title" value-class="cell-value" />
+    <van-cell title="车队" value="{{ teamName }}" size="large" title-class="cell-title" value-class="cell-value" />
+  </van-cell-group>
+
+  <view class="wrap profile-block">
+    <van-button type="info" block bind:click="onClick">编辑</van-button>
+  </view>
+</view>

@@ -1,18 +1,21 @@
 {
   "pages": [
+    "pages/setting/index",
+    "pages/profile/index",
+    "pages/profile/edit",
     "pages/home/index",
     "pages/search/index",
     "pages/friend/index",
-    "pages/setting/index",
     "pages/article/index",
-    "pages/act/index"
+    "pages/act/index",
+    "pages/setting/about"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#56CCF2",
     "navigationBarTitleText": "街头迷你四驱车友",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
@@ -33,9 +36,14 @@
       },
       {
         "pagePath": "pages/setting/index",
-        "text": "设置"
+        "text": "我的"
       }
     ]
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
   },
   "lazyCodeLoading": "requiredComponents"
 }

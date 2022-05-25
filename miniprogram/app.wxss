@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-} 
+}
 
 button {
   background: initial;
@@ -18,15 +18,28 @@ button::after{
   border: none;
 }
 
-
 page {
-  background: #f6f6f6;
+  background: #F6F6F6;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.userinfo, .uploader, .tunnel {
+.page {
+  background: #F6F6F6;
+  display: block;
+}
+.page-full {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap {
+  display: block;
+  margin: 10rpx 20rpx;
+}
+
+.uploader, .tunnel {
   margin-top: 40rpx;
   height: 140rpx;
   width: 100%;
@@ -38,30 +51,6 @@ page {
   flex-direction: row;
   align-items: center;
   transition: all 300ms ease;
-}
-
-.userinfo-avatar {
-  width: 100rpx;
-  height: 100rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-  background-size: cover;
-  background-color: white;
-}
-
-.userinfo-avatar:after {
-  border: none;
-}
-
-.userinfo-nickname {
-  font-size: 32rpx;
-  color: #007aff;
-  background-color: white;
-  background-size: cover;
-}
-
-.userinfo-nickname::after {
-  border: none;
 }
 
 .uploader, .tunnel {
