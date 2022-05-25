@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "好物",
+  "usingComponents": {
+    "van-sidebar": "@vant/weapp/sidebar/index",
+    "van-sidebar-item": "@vant/weapp/sidebar-item/index",
+    "van-card": "@vant/weapp/card/index"
+  }
+}

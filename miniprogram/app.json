@@ -1,18 +1,20 @@
 {
   "pages": [
+    "pages/product/list",
+    "pages/home/index",
+    "pages/product/detail",
+    "pages/friend/index",
     "pages/setting/index",
+    "pages/setting/about",
     "pages/individual/profile",
     "pages/individual/profile-edit",
     "pages/individual/favorite",
     "pages/individual/team",
     "pages/individual/activity",
     "pages/individual/message",
-    "pages/home/index",
     "pages/search/index",
-    "pages/friend/index",
     "pages/article/index",
-    "pages/act/index",
-    "pages/setting/about"
+    "pages/act/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -31,8 +33,8 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/search/index",
-        "text": "搜索"
+        "pagePath": "pages/product/list",
+        "text": "好物"
       },
       {
         "pagePath": "pages/friend/index",

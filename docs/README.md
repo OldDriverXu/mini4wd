@@ -7,7 +7,7 @@
 参数
 ```
 {
-  position: '1'
+  position: 'home'
 }
 ```
 
@@ -91,8 +91,8 @@
 }
 ```
 
-### products
-商品列表
+### productsMenu
+商品菜单
 ---
 
 参数:
@@ -105,14 +105,55 @@
 返回值:
 ```
 {
-  list: [
+  "_id": "f6e08a64628deda3051d286a7451ad5b",
+  "products": [
     {
-      pid: '1',
-      title: '充电电池',
-      desc: '倍量充电电池',
-      tags: ['hot', 'recommend'],
-      category: '3'
-      img: ''
+      "catId": "0",
+      "catName": "热门车型",
+      "list": [
+        {
+          "desc": "四驱兄弟四驱小子S2底盘拼装车",
+          "img": "https://gd3.alicdn.com/imgextra/i1/391130175/O1CN01GcGV0f1DAC1MlcuBL_!!391130175.jpg_400x400.jpg",
+          "price": "20.00",
+          "tag": "热门",
+          "title": "锐泽DD四驱车",
+          "url": "https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-24123859273.39.616f21e7Qa0oFu&id=655687352153"
+        }
+      ]
+    },
+    {
+      "catId": "1",
+      "catName": "改装配件",
+      "list": [
+        {
+          "url": "https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-24123859273.33.22f64222rfxPix&id=43434170606",
+          "desc": "1.5/3/6/12mm铝管螺丝套筒铝衬套 16颗",
+          "img": "https://gd3.alicdn.com/imgextra/i4/0/TB1ul2OHpXXXXX8XVXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg",
+          "price": "4.95",
+          "tag": "热销",
+          "title": "自制田宫四驱车配件铝管"
+        },
+        {
+          "desc": "20周年限定 刻字玻纤维95072全覆盖式龙头",
+          "img": "https://gd2.alicdn.com/imgextra/i3/391130175/TB2qlRssSJjpuFjy0FdXXXmoFXa_!!391130175.jpg_400x400.jpg",
+          "price": "4.95起",
+          "title": "自制田宫四驱车改装配件",
+          "url": "https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-24123859273.75.43d34222pVZnTK&id=520310228613"
+        }
+      ]
+    },
+    {
+      "catId": "1",
+      "catName": "改装工具",
+      "list": [
+        {
+          "title": "自制田宫四驱车战龙四驱车改装配件收纳盒",
+          "url": "https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-24123859273.16.2d0a3a1dtK4rr2&id=39913964759",
+          "desc": "10格马达零件工具盒",
+          "img": "https://gd1.alicdn.com/imgextra/i2/391130175/TB2rwv7cpXXXXX2XXXXXXXXXXXX_!!391130175.jpg_400x400.jpg",
+          "price": "4.95"
+        }
+      ]
     }
   ]
 }

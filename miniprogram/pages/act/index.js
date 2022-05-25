@@ -9,9 +9,8 @@ Page({
 
     db.collection('activities').get()
     .then(res => {
-      console.log(res.data[0].list)
       this.setData({
-        actList: res.data[0].list
+        actList: res.data[0]?.list || []
       })
     })
   },

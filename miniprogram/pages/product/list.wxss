@@ -1,0 +1,18 @@
+/* pages/product/list.wxss */
+page {
+  --sidebar-selected-border-color: #1989fa;
+}
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  flex-grow: 0;
+}
+.product {
+  display: flex;
+  flex-grow: 1;
+}

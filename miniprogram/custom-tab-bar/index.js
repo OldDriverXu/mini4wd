@@ -6,10 +6,10 @@ Component({
         pagePath: "/pages/home/index",
         text: "首页"
       },
-      // {
-      //   pagePath: "/pages/search/index",
-      //   text: "搜索"
-      // },
+      {
+        pagePath: "/pages/product/list",
+        text: "好物"
+      },
       {
         pagePath: "/pages/friend/index",
         text: "车友"

@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="menu" wx:if="{{ menuList.length > 0}}">
+    <van-sidebar active-key="{{ activeKey }}" bind:change="onChangeSidebar">
+      <block wx:for="{{ menuList }}" wx:key="index">
+        <van-sidebar-item title="{{ item.title }}" />
+      </block>
+    </van-sidebar>
+  </view>
+  <view class="products" wx:if="{{ productList.length > 0}}">
+    <block wx:for="{{ productList }}" wx:key="index">
+      <view bindtap="onClickProduct" data-item="{{ item }}">
+        <van-card
+          tag="{{ item.tag }}"
+          tags="{{ item.tags }}"
+          price="{{ item.price }}"
+          desc="{{ item.desc }}"
+          title="{{ item.title }}"
+          thumb="{{ item.img }}"
+          lazy-load
+        />
+      </view>
+    </block>
+  </view>
+</view>
