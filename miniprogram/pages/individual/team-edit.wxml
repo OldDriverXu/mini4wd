@@ -1,0 +1,4 @@
+<!--pages/profile/team-edit.wxml-->
+<view class="page">
+  <van-empty description="暂无内容" />
+</view>

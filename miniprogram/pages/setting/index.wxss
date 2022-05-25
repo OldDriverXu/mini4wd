@@ -44,16 +44,21 @@
   line-height: 150%;
 }
 .userinfo-avatar {
-  width: 120rpx;
-  height: 120rpx;
-  margin-right: 40rpx;
+  width: 128rpx;
+  height: 128rpx;
+  margin-left: 36rpx;
   border-radius: 50%;
   background-size: cover;
   background-color: white;
   flex-grow: 0;
 }
 .userinfo-avatar:after {
-  border: 20px solid #ffffff;
+  border-radius: 50%;
+  border: 10rpx solid #ffffff;
+}
+.actions {
+  margin: 32rpx;
+  border-radius: 16rpx;
 }
 
 .join {

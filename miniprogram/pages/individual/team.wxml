@@ -1,0 +1,3 @@
+<view class="page">
+  <van-empty description="暂无内容" />
+</view>

@@ -1,8 +1,12 @@
 {
   "pages": [
     "pages/setting/index",
-    "pages/profile/index",
-    "pages/profile/edit",
+    "pages/individual/profile",
+    "pages/individual/profile-edit",
+    "pages/individual/favorite",
+    "pages/individual/team",
+    "pages/individual/activity",
+    "pages/individual/message",
     "pages/home/index",
     "pages/search/index",
     "pages/friend/index",
@@ -43,7 +47,10 @@
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
     "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index"
   },
   "lazyCodeLoading": "requiredComponents"
 }

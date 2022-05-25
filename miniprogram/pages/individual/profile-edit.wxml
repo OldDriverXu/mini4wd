@@ -6,12 +6,15 @@
       label="昵称"
       placeholder="请输入昵称"
       size="large"
+      title-width="4.2em"
     />
     <van-field
       value="{{ openid }}"
       readonly
       label="uid"
       size="large"
+      title-width="4.2em"
+      disabled
     />
     <!-- <van-field
       model:value="{{ province }}"
@@ -19,6 +22,7 @@
       label="地区"
       placeholder="请输入省/直辖市/地区"
       size="large"
+      title-width="4.2em"
     />
     <van-field
       model:value="{{ city }}"
@@ -26,6 +30,7 @@
       label="市"
       placeholder="请输入城市"
       size="large"
+      title-width="4.2em"
     /> -->
     <van-cell
       title="地区"
@@ -33,6 +38,7 @@
       is-link
       bind:click="onShowPopup"
       size="large"
+      title-width="4.2em"
       title-class="cell-title"
       value-class="cell-value"
     />
@@ -60,6 +66,7 @@
       label="车名"
       placeholder="请输入爱车车名"
       size="large"
+      title-width="4.2em"
     />
 
     <van-field 
@@ -68,6 +75,7 @@
       label="底盘"
       placeholder="请输入底盘型号"
       size="large"
+      title-width="4.2em"
     />
 
     <van-field 
@@ -76,6 +84,7 @@
       label="车队"
       placeholder="请输入车队"
       size="large"
+      title-width="4.2em"
     />
   </van-cell-group>
 

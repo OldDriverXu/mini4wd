@@ -44,7 +44,7 @@ Page({
 
   onClick: function () {
     wx.navigateTo({
-      url: '/pages/profile/edit?' + buildUrl({
+      url: '/pages/individual/profile-edit?' + buildUrl({
         ...this.data
       })
     })

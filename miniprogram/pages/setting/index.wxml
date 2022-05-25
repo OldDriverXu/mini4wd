@@ -11,15 +11,21 @@
   </block>
   <block wx:else>
     <view class="userinfo">
+      <image class="userinfo-avatar" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <view class="userinfo-name">
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
         <text class="userinfo-id">uid: {{openid}}</text>
       </view>
-      <image class="userinfo-avatar" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" mode="cover"></image>
     </view>
-    <van-cell-group>
-      <van-cell icon="label-o" title="信息" size="large" is-link link-type="navigateTo" url="/pages/profile/index" />
-      <van-cell icon="medal-o" title="会员" size="large" is-link link-type="navigateTo" url="/pages/about/index" />
+    <van-grid column-num="4" custom-class="actions">
+      <van-grid-item icon="star-o" text="我的收藏" link-type="navigateTo" url="/pages/individual/favorite" />
+      <van-grid-item icon="cluster-o" text="我的车队" link-type="navigateTo" url="/pages/individual/team" />
+      <van-grid-item icon="flag-o" text="我的活动" link-type="navigateTo" url="/pages/individual/activity" />
+      <van-grid-item icon="chat-o" text="我的消息" link-type="navigateTo" url="/pages/individual/message" />
+    </van-grid>
+    <van-cell-group inset custom-class="setting">
+      <van-cell icon="label-o" title="个人" size="large" is-link link-type="navigateTo" url="/pages/individual/profile" />
+      <!-- <van-cell icon="medal-o" title="会员" size="large" is-link link-type="navigateTo" url="/pages/member/index" /> todo -->
       <van-cell icon="setting-o" title="关于" size="large" is-link link-type="navigateTo" url="/pages/setting/about" />
     </van-cell-group>
   </block>
