@@ -1,24 +1,19 @@
 <view class="page">
-  <view class="menu" wx:if="{{ menuList.length > 0}}">
-    <van-sidebar active-key="{{ activeKey }}" bind:change="onChangeSidebar">
+  <scroll-view class="menu" scroll-y style="height: calc(100vh);" wx:if="{{ menuList.length > 0}}">
+    <van-sidebar active-key="{{ activeKey }}" bind:change="onChangeSidebar" custom-class="menu">
       <block wx:for="{{ menuList }}" wx:key="index">
-        <van-sidebar-item title="{{ item.title }}" />
+        <van-sidebar-item title="{{ item.title }}" custom-class="menu" />
       </block>
     </van-sidebar>
-  </view>
-  <view class="products" wx:if="{{ productList.length > 0}}">
+    <view class="placeholder" />
+  </scroll-view>
+  <scroll-view class="products" scroll-y style="height: calc(100vh);" wx:if="{{ productList.length > 0}}">
     <block wx:for="{{ productList }}" wx:key="index">
       <view bindtap="onClickProduct" data-item="{{ item }}">
-        <van-card
-          tag="{{ item.tag }}"
-          tags="{{ item.tags }}"
-          price="{{ item.price }}"
-          desc="{{ item.desc }}"
-          title="{{ item.title }}"
-          thumb="{{ item.img }}"
-          lazy-load
-        />
+        <van-card tag="{{ item.tag }}" tags="{{ item.tags }}" price="{{ item.price }}" desc="{{ item.desc }}"
+          title="{{ item.title }}" thumb="{{ item.img }}" thumb-class="thumb-img" lazy-load />
       </view>
     </block>
-  </view>
+    <view class="placeholder" />
+  </scroll-view>
 </view>

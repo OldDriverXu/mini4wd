@@ -7,12 +7,23 @@ page {
   flex-direction: row;
   align-items: top;
   box-sizing: border-box;
+  position: relative;
 }
 .menu {
-  display: flex;
-  flex-grow: 0;
+  width: 180rpx !important;
 }
-.product {
-  display: flex;
-  flex-grow: 1;
+.products {
+  width: 570rpx;
+}
+
+.van-card__thumb {
+  overflow:hidden;
+}
+.thumb-img {
+  overflow:hidden;
+}
+
+.placeholder {
+  width: 100%;
+  height: 240rpx;
 }

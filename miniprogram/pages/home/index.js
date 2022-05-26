@@ -6,11 +6,6 @@ Page({
   },
 
   onLoad: function() {
-    // 设置Tabbar
-    this.getTabBar().setData({
-      active : 0
-    })
-
     const db = wx.cloud.database()
     // 加载banner广告位数据
     db.collection('banner').where({
@@ -39,8 +34,6 @@ Page({
         }
       })
     })
-
-
   },
 
   onShow: function () {
