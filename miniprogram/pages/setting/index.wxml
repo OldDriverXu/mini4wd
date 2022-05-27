@@ -5,7 +5,7 @@
       <view class="login-text">街头迷你四驱车</view>
       <view class="login-text">期待你的加入</view>
       <view class="login-btn">
-        <van-button type="primary" block bind:click="getUserProfile">微信登录</van-button>
+        <van-button type="primary" block bind:click="onClickLogin">微信登录</van-button>
       </view>
     </view>
   </block>
