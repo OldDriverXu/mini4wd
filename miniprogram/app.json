@@ -3,6 +3,7 @@
     "pages/home/index",
     "pages/product/list",
     "pages/product/detail",
+    "pages/car/list",
     "pages/friend/index",
     "pages/setting/index",
     "pages/setting/about",

@@ -79,16 +79,24 @@ Page({
           url: '/pages/act/index'
         })
         break
-      case 'sale':
+      case 'car':
         wx.navigateTo({
-          url: '/pages/sale/list'
+          url: '/pages/car/list'
         })
         break
-      case 'model':
-        wx.navigateTo({
-          url: '/pages/model/list'
+      case 'jielong': {
+        const aid='638496634'
+        const timestamp=new Date().getTime()
+        const path=`pages/video/video?__preload_=${timestamp*10+3}&__key_=${timestamp*10+4}&avid=${aid}`
+        wx.navigateToMiniProgram({
+          appId: 'wx7564fd5313d24844',
+          path,
+          success: res => {
+            console.log('跳转成功')
+          }
         })
         break
+      }
     }
   },
 

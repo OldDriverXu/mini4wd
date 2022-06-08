@@ -1,0 +1,11 @@
+<view class="page">
+  <van-dropdown-menu>
+    <van-dropdown-item value="{{ value }}" options="{{ option }}" bind:change="onChangeOption" />
+  </van-dropdown-menu>
+  <scroll-view class="cars" scroll-y style="height: calc(100vh);" wx:if="{{ carList.length > 0 }}">
+    <block wx:for="{{ carList }}" wx:key="index">
+      <van-card title="{{ item.title }}" desc="{{ '发售日期：' + item.produceTime }}" thumb="{{ item.img }}" thumb-class="thumb-img" currency="￥" price="{{ item.price }}" lazy-load />
+    </block>
+    <view class="placeholder" />
+  </scroll-view>
+</view>

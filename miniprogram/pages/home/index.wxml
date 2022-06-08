@@ -17,9 +17,9 @@
       <van-grid-item icon="comment-o" text="发展历史" bindtap="onClickBtn" data-name="intro" />
       <van-grid-item icon="gem-o" text="赛事规则" bindtap="onClickBtn" data-name="rule" />
       <van-grid-item icon="fire-o" text="热门活动" bindtap="onClickBtn" data-name="act" />
-      <!-- <van-grid-item icon="video-o" text="UP接龙" bindtap="onClickBtn" data-name="jielong" /> -->
-      <!-- <van-grid-item icon="cart-o" text="热销商品" bindtap="onClickBtn" data-name="sale" />
-      <van-grid-item icon="smile-o" text="酷炫改装" bindtap="onClickBtn" data-name="model" /> -->
+      <van-grid-item icon="video-o" text="UP接龙" bindtap="onClickBtn" data-name="jielong" />
+      <van-grid-item icon="cart-o" text="热销车型" bindtap="onClickBtn" data-name="car" />
+      <van-grid-item icon="smile-o" text="酷炫改装" bindtap="onClickBtn" data-name="model" />
 
     </van-grid>
 
@@ -27,10 +27,5 @@
       <view class="news-title">资讯</view>
       <van-notice-bar custom-class="news-item" scrollable left-icon="volume-o" text="{{ news.text }}" bind:click="onClickNews" data-news="{{ news }}"/>
     </view>
-
-    <!-- <video
-      src="https://upos-sz-mirrorhw.bilivideo.com/upgcxcode/27/54/582385427/582385427-1-32.flv?e=ig8euxZM2rNcNbRghwdVhwdlhWNVhwdVhoNvNC8BqJIzNbfqXBvEqxTEto8BTrNvN0GvT90W5JZMkX_YN0MvXg8gNEV4NC8xNEV4N03eN0B5tZlqNxTEto8BTrNvNeZVuJ10Kj_g2UB02J0mN0B5tZlqNCNEto8BTrNvNC7MTX502C8f2jmMQJ6mqF2fka1mqx6gqj0eN0B599M=&uipk=5&nbs=1&deadline=1653485567&gen=playurlv2&os=hwbv&oi=3664411466&trid=2bf278b9143e45e1806eff0848a54520u&platform=pc&upsig=ba4d07ac5d90ef27cfc6e205d1e824b6&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=297920513&bvc=vod&nettype=0&orderid=0,3&agrr=0&bw=121273&logo=80000000"
-      referrer-policy="origin"
-    /> -->
   </view>
 </view>
